@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #252525;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.clock {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff url(http://pantburk.info/upload/analogclock/bg_1000x1000.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 20px rgb(158, 27, 27);
+    box-shadow: 0 0 2px 4px rgb(73, 4, 4), inset 0 0 10px #252525
+}
+
+.clock::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    background-color: #d41313;
+    border-radius: 50%;
+    border: solid 1px white;
+    z-index: 4;
+}
+
+.hour {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hour::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 35%;
+    background: #252525;
+    left: calc(50% - 10px);
+    top: 50%;
+    transform-origin: top;
+    transform: rotate(180deg);
+    border-radius: 10px;
+}
+
+.minute {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.minute::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 45%;
+    background: #252525;
+    left: calc(50% - 7px);
+    top: 50%;
+    transform-origin: top;
+    transform: rotate(180deg);
+    border-radius: 7px;
+}
+
+.second {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.second::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 45%;
+    background: #d41313;
+    left: calc(50% - 4px);
+    top: 50%;
+    transform-origin: top;
+    transform: rotate(180deg);
+    border-radius: 4px;
+}
+
+h1 {
+    
+    position: absolute;
+    width: 167px;
+    color: rgb(121, 3, 3);
+    height: 6%;
+    left: 217px;
+    top: 403px;
+    background-color: rgb(247, 231, 231);
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: initial;
+    letter-spacing: 10px;
+    
+}
+button  {
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+
+.mute {
+    background-image: url(https://i.ibb.co/vsNns4W/icons8-no-audio-50.png);
+}
+
+.unmute {
+    background-image: url(https://i.ibb.co/JyP7PwX/icons8-audio-50.png);
+}
