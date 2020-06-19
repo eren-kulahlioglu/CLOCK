@@ -1,5 +1,5 @@
 # CLOCK
 
-Clock with CSS,JavaScript,HTML5V
+Clock with CSS,JavaScript,HTML5
 
 
